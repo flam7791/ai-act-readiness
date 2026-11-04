@@ -1,0 +1,2 @@
+cycle,date,label,use_cases,screening_complete,red,amber,green,counsel_changed,prep_hours,decisions_citing_pack,data_issues
+0,2026-11-04,SAMPLE DATA - invented to show the log format,11,10,2,5,4,,,,2

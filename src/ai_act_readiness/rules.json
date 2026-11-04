@@ -1,0 +1,64 @@
+{
+  "basis": "Regulation (EU) 2024/1689 (AI Act) as amended by Regulation (EU) 2026/1744 (Digital Omnibus on AI, in force 27 July 2026)",
+  "checked": "2026-11-04",
+  "note": "Dates and article references are a reading of the consolidated text for a portfolio screening tool. They are not legal advice; confirm against EUR-Lex and with legal counsel.",
+  "prohibited_practices": {
+    "manipulative_techniques": "Art. 5(1)(a)",
+    "exploiting_vulnerabilities": "Art. 5(1)(b)",
+    "social_scoring": "Art. 5(1)(c)",
+    "crime_prediction_by_profiling": "Art. 5(1)(d)",
+    "untargeted_facial_scraping": "Art. 5(1)(e)",
+    "emotion_recognition_workplace_or_education": "Art. 5(1)(f)",
+    "biometric_categorisation_sensitive": "Art. 5(1)(g)",
+    "realtime_remote_biometric_identification_public": "Art. 5(1)(h)"
+  },
+  "annex_iii_areas": {
+    "1_biometrics": "Annex III, point 1",
+    "2_critical_infrastructure": "Annex III, point 2",
+    "3_education": "Annex III, point 3",
+    "4a_recruitment_selection": "Annex III, point 4(a)",
+    "4b_work_decisions_monitoring": "Annex III, point 4(b)",
+    "5a_public_benefits": "Annex III, point 5(a)",
+    "5b_creditworthiness": "Annex III, point 5(b)",
+    "5c_life_health_insurance_pricing": "Annex III, point 5(c)",
+    "5d_emergency_dispatch": "Annex III, point 5(d)"
+  },
+  "fria_areas": ["5b_creditworthiness", "5c_life_health_insurance_pricing"],
+  "derogation_grounds": {
+    "narrow_procedural_task": "Art. 6(3)(a)",
+    "improves_completed_human_activity": "Art. 6(3)(b)",
+    "detects_patterns_without_replacing_review": "Art. 6(3)(c)",
+    "preparatory_task": "Art. 6(3)(d)"
+  },
+  "obligations": [
+    {"id": "PROHIB", "title": "Stop or redesign: prohibited practice", "ref": "Art. 5", "applies_to": "prohibited", "role": "any", "due": "2025-02-02"},
+
+    {"id": "HR-RISK", "title": "Risk management system", "ref": "Art. 9", "applies_to": "high_risk", "role": "provider", "due": "2027-12-02"},
+    {"id": "HR-DATA", "title": "Data and data governance", "ref": "Art. 10", "applies_to": "high_risk", "role": "provider", "due": "2027-12-02"},
+    {"id": "HR-DOC", "title": "Technical documentation", "ref": "Art. 11, Annex IV", "applies_to": "high_risk", "role": "provider", "due": "2027-12-02"},
+    {"id": "HR-LOG", "title": "Automatic logging", "ref": "Art. 12", "applies_to": "high_risk", "role": "provider", "due": "2027-12-02"},
+    {"id": "HR-INFO", "title": "Instructions for use for deployers", "ref": "Art. 13", "applies_to": "high_risk", "role": "provider", "due": "2027-12-02"},
+    {"id": "HR-OVERSIGHT", "title": "Human oversight by design", "ref": "Art. 14", "applies_to": "high_risk", "role": "provider", "due": "2027-12-02"},
+    {"id": "HR-ROBUST", "title": "Accuracy, robustness and cybersecurity", "ref": "Art. 15", "applies_to": "high_risk", "role": "provider", "due": "2027-12-02"},
+    {"id": "HR-QMS", "title": "Quality management system", "ref": "Art. 17", "applies_to": "high_risk", "role": "provider", "due": "2027-12-02"},
+    {"id": "HR-CONFORMITY", "title": "Conformity assessment and EU declaration", "ref": "Art. 43, 47", "applies_to": "high_risk", "role": "provider", "due": "2027-12-02"},
+    {"id": "HR-REGISTER", "title": "Registration in the EU database", "ref": "Art. 49(1)", "applies_to": "high_risk", "role": "provider", "due": "2027-12-02"},
+    {"id": "HR-PMM", "title": "Post-market monitoring", "ref": "Art. 72", "applies_to": "high_risk", "role": "provider", "due": "2027-12-02"},
+
+    {"id": "DEP-USE", "title": "Use per instructions; assign competent human oversight", "ref": "Art. 26(1)-(2)", "applies_to": "high_risk", "role": "deployer", "due": "2027-12-02"},
+    {"id": "DEP-MONITOR", "title": "Monitor operation; keep logs at least six months", "ref": "Art. 26(5)-(6)", "applies_to": "high_risk", "role": "deployer", "due": "2027-12-02"},
+    {"id": "DEP-WORKERS", "title": "Inform workers' representatives and affected workers", "ref": "Art. 26(7)", "applies_to": "high_risk_workplace", "role": "deployer", "due": "2027-12-02"},
+    {"id": "DEP-PERSONS", "title": "Inform people subject to decisions; explanation on request", "ref": "Art. 26(11), 86", "applies_to": "high_risk", "role": "deployer", "due": "2027-12-02"},
+    {"id": "DEP-FRIA", "title": "Fundamental rights impact assessment before first use", "ref": "Art. 27", "applies_to": "high_risk_fria", "role": "deployer", "due": "2027-12-02"},
+
+    {"id": "DER-ASSESS", "title": "Document the Art. 6(3) assessment before use", "ref": "Art. 6(4)", "applies_to": "derogation", "role": "provider", "due": "2027-12-02"},
+    {"id": "DER-REGISTER", "title": "Register the system as not high-risk", "ref": "Art. 49(2)", "applies_to": "derogation", "role": "provider", "due": "2027-12-02"},
+
+    {"id": "TR-INTERACT", "title": "Tell people they are interacting with an AI system", "ref": "Art. 50(1)", "applies_to": "interacts_with_people", "role": "provider", "due": "2026-08-02"},
+    {"id": "TR-MARKING", "title": "Machine-readable marking of synthetic output", "ref": "Art. 50(2)", "applies_to": "generates_synthetic_content", "role": "provider", "due": "2026-08-02", "due_if_in_service_before": {"date": "2026-08-02", "due": "2026-12-02", "ref": "Art. 111(4)"}},
+    {"id": "TR-EMOTION", "title": "Inform people exposed to emotion recognition or biometric categorisation", "ref": "Art. 50(3)", "applies_to": "emotion_recognition_permitted", "role": "deployer", "due": "2026-08-02"},
+    {"id": "TR-DEEPFAKE", "title": "Disclose deep fakes and AI-generated published text", "ref": "Art. 50(4)", "applies_to": "deepfake_published", "role": "deployer", "due": "2026-08-02"}
+  ],
+  "literacy": {"id": "LIT", "title": "Measures to support AI literacy of staff and others operating AI on the organisation's behalf", "ref": "Art. 4 (as amended)", "due": "2025-02-02",
+    "note": "Since the 2026 amendment, Art. 4 asks providers and deployers to take measures supporting AI literacy and does not require a guaranteed level. The coverage target (--literacy-target) is the organisation's own policy choice, not a legal threshold."}
+}

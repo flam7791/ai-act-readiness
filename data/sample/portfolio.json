@@ -1,0 +1,70 @@
+{
+  "organisation": "Northwind Assurance (fictional)",
+  "note": "Synthetic portfolio for a fictional European insurer. Screening answers are illustrative, chosen so that every category and every decision the tool can propose appears once.",
+  "use_cases": [
+    {"id": "UC01", "name": "Life and health underwriting score", "business_unit": "Underwriting", "owner_role": "Head of Life Underwriting",
+     "purpose": "Scores applicants for life and health cover and proposes a premium band; underwriters confirm.",
+     "role": "provider_and_deployer", "stage": "live", "in_service_since": "2025-04-01",
+     "prohibited_practice": null, "annex_iii_area": "5c_life_health_insurance_pricing", "profiling": true,
+     "interacts_with_people": false, "generates_synthetic_content": false, "deepfake_published": false, "emotion_recognition": "none"},
+
+    {"id": "UC02", "name": "Motor claims triage", "business_unit": "Claims", "owner_role": "Claims Operations Lead",
+     "purpose": "Routes new motor claims to fast-track or specialist queues by complexity.",
+     "role": "provider_and_deployer", "stage": "live", "in_service_since": "2025-09-15",
+     "prohibited_practice": null, "annex_iii_area": null, "profiling": false,
+     "interacts_with_people": false, "generates_synthetic_content": false, "deepfake_published": false, "emotion_recognition": "none"},
+
+    {"id": "UC03", "name": "Claims fraud signals", "business_unit": "Claims", "owner_role": "Head of Special Investigations",
+     "purpose": "Flags claims with fraud indicators for an investigator to review.",
+     "role": "provider_and_deployer", "stage": "live", "in_service_since": "2024-11-01",
+     "prohibited_practice": null, "annex_iii_area": null, "profiling": true,
+     "interacts_with_people": false, "generates_synthetic_content": false, "deepfake_published": false, "emotion_recognition": "none"},
+
+    {"id": "UC04", "name": "Customer service assistant", "business_unit": "Customer Service", "owner_role": "Head of Digital Channels",
+     "purpose": "A chat assistant on the website and app, built on a general-purpose model, answering policy questions.",
+     "role": "provider_and_deployer", "stage": "live", "in_service_since": "2026-03-01", "gpai_based": true,
+     "prohibited_practice": null, "annex_iii_area": null, "profiling": false,
+     "interacts_with_people": true, "generates_synthetic_content": true, "deepfake_published": false, "emotion_recognition": "none"},
+
+    {"id": "UC05", "name": "Call-centre voice sentiment for agent coaching", "business_unit": "Customer Service", "owner_role": "Contact Centre Manager",
+     "purpose": "Infers agents' emotional state from call audio to target coaching.",
+     "role": "deployer", "stage": "pilot", "in_service_since": "2026-06-01",
+     "prohibited_practice": null, "annex_iii_area": null, "profiling": false,
+     "interacts_with_people": false, "generates_synthetic_content": false, "deepfake_published": false, "emotion_recognition": "workplace"},
+
+    {"id": "UC06", "name": "CV screening for graduate hiring", "business_unit": "People and Culture", "owner_role": "Head of Talent Acquisition",
+     "purpose": "A vendor tool that ranks graduate applications before recruiter review.",
+     "role": "deployer", "stage": "pilot", "in_service_since": "2026-09-01",
+     "prohibited_practice": null, "annex_iii_area": "4a_recruitment_selection", "profiling": true,
+     "interacts_with_people": false, "generates_synthetic_content": false, "deepfake_published": false, "emotion_recognition": "none"},
+
+    {"id": "UC07", "name": "Staff productivity assistant", "business_unit": "Group IT", "owner_role": "Workplace Technology Lead",
+     "purpose": "A licensed general-purpose assistant for drafting and summarising, used by office staff.",
+     "role": "deployer", "stage": "live", "in_service_since": "2025-10-01", "gpai_based": true,
+     "prohibited_practice": null, "annex_iii_area": null, "profiling": false,
+     "interacts_with_people": false, "generates_synthetic_content": false, "deepfake_published": false, "emotion_recognition": "none"},
+
+    {"id": "UC08", "name": "Health tariff data-quality checker", "business_unit": "Pricing", "owner_role": "Pricing Actuary",
+     "purpose": "Checks tariff tables for format and range errors before actuaries set health prices; makes no decision about any person.",
+     "role": "provider_and_deployer", "stage": "live", "in_service_since": "2025-02-01",
+     "prohibited_practice": null, "annex_iii_area": "5c_life_health_insurance_pricing", "derogation_ground": "narrow_procedural_task", "profiling": false,
+     "interacts_with_people": false, "generates_synthetic_content": false, "deepfake_published": false, "emotion_recognition": "none"},
+
+    {"id": "UC09", "name": "Health cover premium personalisation", "business_unit": "Pricing", "owner_role": "Head of Health Products",
+     "purpose": "Adjusts health premiums from customer behaviour data; the owner argues it only prepares the actuary's decision.",
+     "role": "provider_and_deployer", "stage": "pilot", "in_service_since": "2026-05-01",
+     "prohibited_practice": null, "annex_iii_area": "5c_life_health_insurance_pricing", "derogation_ground": "preparatory_task", "profiling": true,
+     "interacts_with_people": false, "generates_synthetic_content": false, "deepfake_published": false, "emotion_recognition": "none"},
+
+    {"id": "UC10", "name": "Campaign image generation", "business_unit": "Marketing", "owner_role": "Brand Director",
+     "purpose": "A licensed image generator producing realistic campaign images of people who do not exist.",
+     "role": "deployer", "stage": "live", "in_service_since": "2026-09-01", "gpai_based": true,
+     "prohibited_practice": null, "annex_iii_area": null, "profiling": false,
+     "interacts_with_people": false, "generates_synthetic_content": true, "deepfake_published": true, "emotion_recognition": "none"},
+
+    {"id": "UC11", "name": "Broker email summariser", "business_unit": "Commercial Lines", "owner_role": "Broker Relations Lead",
+     "purpose": "Proposed: summarise broker emails and draft replies.",
+     "role": "deployer", "stage": "idea",
+     "prohibited_practice": null, "annex_iii_area": null}
+  ]
+}

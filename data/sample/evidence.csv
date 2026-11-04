@@ -1,0 +1,29 @@
+use_case_id,obligation_id,status,evidence_ref,owner_role
+UC01,HR-RISK,partial,RM-UW-2026-03: draft risk register,Head of Life Underwriting
+UC01,HR-DATA,partial,DG-UW-07: data lineage done; bias testing open,Chief Data Officer
+UC01,HR-DOC,missing,,Head of Life Underwriting
+UC01,HR-LOG,done,LOG-UW-01,Head of IT Underwriting
+UC01,HR-INFO,missing,,Head of Life Underwriting
+UC01,HR-OVERSIGHT,done,UW-SOP-12: underwriter confirms every band,Head of Life Underwriting
+UC01,HR-ROBUST,partial,VAL-UW-2025: model validation; no drift monitoring,Model Risk
+UC01,HR-QMS,missing,,Chief Risk Officer
+UC01,HR-CONFORMITY,missing,,Compliance
+UC01,HR-REGISTER,missing,,Compliance
+UC01,HR-PMM,missing,,Model Risk
+UC01,DEP-USE,done,UW-SOP-12,Head of Life Underwriting
+UC01,DEP-MONITOR,partial,LOG-UW-01: retention 90 days,Head of IT Underwriting
+UC01,DEP-PERSONS,missing,,Customer Communications
+UC01,DEP-FRIA,missing,,Legal
+UC04,TR-INTERACT,missing,,Head of Digital Channels
+UC04,TR-MARKING,partial,ARCH-CS-04: metadata on exported transcripts only,Head of Digital Channels
+UC06,DEP-USE,partial,Vendor instructions received; oversight owner not named,Head of Talent Acquisition
+UC06,DEP-MONITOR,missing,,Head of Talent Acquisition
+UC06,DEP-WORKERS,missing,,Employee Relations
+UC06,DEP-PERSONS,missing,,Head of Talent Acquisition
+UC08,DER-ASSESS,done,LEGAL-AIA-08: assessment memo,Legal
+UC08,DER-REGISTER,missing,,Compliance
+UC09,HR-RISK,missing,,Head of Health Products
+UC09,HR-DATA,missing,,Chief Data Officer
+UC09,HR-OVERSIGHT,partial,Actuary sign-off on monthly batch,Head of Health Products
+UC10,TR-DEEPFAKE,done,MKT-POL-22: AI-generated label on every image,Brand Director
+UC03,HR-RISK,done,,Head of Special Investigations
